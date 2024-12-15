@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #01051e;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.btn {
+  @apply bg-color-secondary py-3 px-9 rounded-md capitalize font-bold hover:opacity-80 ease-in delay-200;
+}
+
+.title {
+  @apply text-3xl font-bold leading-snug mb-4 md:text-4xl;
+}
+
+.blob1 {
+  @apply bg-color-blob h-80 w-80 rounded-full -z-10 absolute top-12 left-5 opacity-30 blur-2xl overflow-hidden;
+}
+
+.blob2 {
+  @apply bg-color-secondary h-80 w-80 rounded-full -z-10 absolute bottom-10 right-0 opacity-30 blur-2xl overflow-hidden;
+}
+
+.user-pic.active{
+    border: 1px solid #ff7d3b;
+}
